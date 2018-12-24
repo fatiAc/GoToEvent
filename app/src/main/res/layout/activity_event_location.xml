@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.gotoevent.controller.EventLocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment" />
+
+        <Button
+            android:id="@+id/getAdressBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_round"
+            android:drawableLeft="@drawable/ic_check"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/myMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_marginLeft="15dp"
+            android:layout_width="350dp"
+            android:layout_height="500dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+

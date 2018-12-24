@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blanc"
+    android:id="@+id/homeRelativeLayout"
+    android:layout_width="381dp"
+    android:layout_height="576dp"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteY="-5dp"
+    tools:context="com.example.hp.gotoevent.controller.HomeActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="33dp"
+            app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/paswrdTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailTxt"
+        android:layout_below="@+id/emailTxt"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/paswrdTxt"
+        android:layout_below="@+id/paswrdTxt"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_round"
+        android:drawableLeft="@drawable/ic_send"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Se connecter "
+        android:textColor="@color/blanc" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/submitBtn"
+        android:layout_below="@+id/label"
+        android:background="@drawable/button_round"
+        android:drawableLeft="@drawable/ic_account"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Créer un compte"
+        android:textColor="@color/blanc" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signUpBtn"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="34dp"
+        android:text="Vous n'avez pas un compte ? "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/submitBtn"
+        android:layout_marginTop="13dp"
+        android:text="Mot de pas oublier"
+        android:textColor="@color/black" />
+
+
+
+</RelativeLayout>

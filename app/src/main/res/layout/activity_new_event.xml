@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blanc"
+    android:id="@+id/homeRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.hp.gotoevent.controller.NewEventActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <EditText
+        android:id="@+id/titleTxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/edit_round"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Titre"
+        android:inputType="text"
+        android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/descriptionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:overScrollMode="always"
+            android:scrollHorizontally="false"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:hint="Description"
+            android:paddingLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:id="@+id/timeLinear">
+
+    <EditText
+        android:id="@+id/dateTxt"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:background="@drawable/edit_round"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:lines="6"
+        android:overScrollMode="always"
+        android:scrollHorizontally="false"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:paddingLeft="10dp"
+        android:editable="false"
+        android:focusable="false"
+        android:hint="Date"/>
+
+        <EditText
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="-49dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:background="@drawable/edit_round"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="hh:min"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:id="@+id/adresLinear">
+
+        <EditText
+            android:id="@+id/adresTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_round"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:editable="false"
+            android:hint="Adresse"
+            android:inputType="text"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/addLocationBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="250dp"
+            android:layout_marginTop="-70dp"
+            android:background="@drawable/button_oval"
+            android:drawableLeft="@drawable/ic_add_location"
+            android:paddingLeft="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imgLinear">
+        <Button
+            android:id="@+id/addImgBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_oval"
+            android:drawableLeft="@drawable/ic_add_a_photo"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:id="@+id/saveLinear">
+        <Button
+            android:id="@+id/valideeBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:drawableLeft="@drawable/ic_save"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="Enregistrer"
+            android:textColor="@color/blanc" />
+        </LinearLayout>
+
+    </TableLayout>
+
+
+</ScrollView>
